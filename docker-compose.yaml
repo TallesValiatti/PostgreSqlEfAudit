@@ -1,0 +1,12 @@
+version: '3.8'
+services:
+  postgres:
+    container_name: postgres_container_demo
+    image: postgres
+    environment:
+      POSTGRES_USER: "postgres"
+      POSTGRES_PASSWORD: "Teste12345!"
+      PGDATA: /data/postgres
+    ports:
+      - "5444:5432"
+ 
